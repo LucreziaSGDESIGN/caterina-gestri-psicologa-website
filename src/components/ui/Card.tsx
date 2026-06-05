@@ -5,7 +5,7 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   variant?: 'default' | 'elevated' | 'outline'
 }
 
-export default function Card({
+export function Card({
   variant = 'outline',
   className,
   children,
@@ -25,3 +25,5 @@ export default function Card({
     </div>
   )
 }
+
+export default Card

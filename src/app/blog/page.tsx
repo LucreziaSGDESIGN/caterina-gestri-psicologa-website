@@ -64,7 +64,7 @@ export default async function Blog() {
 
                     {/* Tags */}
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {post.tags.map((tag) => (
+                      {post.tags?.map((tag) => (
                         <span
                           key={tag}
                           className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-700 hover:bg-primary-200 transition-colors"
