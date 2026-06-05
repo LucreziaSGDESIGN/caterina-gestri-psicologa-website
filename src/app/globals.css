@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography & Spacing Optimization */
+@layer components {
+  .prose {
+    @apply max-w-3xl mx-auto px-4;
+  }
+
+  /* Optimized section spacing for better visual hierarchy */
+  .section {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .section-header {
+    @apply text-3xl md:text-4xl font-bold text-neutral-900 mb-6;
+  }
+
+  .section-subheader {
+    @apply text-base md:text-lg text-neutral-600 max-w-2xl mx-auto;
+  }
+
+  /* Accessibility: Larger touch targets, better spacing */
+  .button-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors active:scale-95 min-h-12 min-w-12;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-neutral-200 text-neutral-900 font-semibold rounded-lg hover:bg-neutral-300 transition-colors active:scale-95 min-h-12 min-w-12;
+  }
+
+  /* Card consistent spacing */
+  .card {
+    @apply rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-shadow;
+  }
+
+  /* Grid spacing optimization */
+  .grid-spacing {
+    @apply gap-6 md:gap-8;
+  }
+}
